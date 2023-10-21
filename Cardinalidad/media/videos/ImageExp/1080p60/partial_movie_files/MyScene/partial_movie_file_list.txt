@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/ImageExp/1080p60/partial_movie_files/MyScene/1413466013_1556672325_223132457.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/ImageExp/1080p60/partial_movie_files/MyScene/1672018281_329969645_1544918559.mp4'

@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialInfinity/720p30/partial_movie_files/SquaresSeries/3814802930_1871697371_223132457.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialInfinity/720p30/partial_movie_files/SquaresSeries/371792034_3202454159_1050344267.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialInfinity/720p30/partial_movie_files/SquaresSeries/371792034_1539210074_1912398001.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialInfinity/720p30/partial_movie_files/SquaresSeries/371792034_1619112056_1596987667.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialInfinity/720p30/partial_movie_files/SquaresSeries/371792034_329969645_655242224.mp4'

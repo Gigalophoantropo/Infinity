@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/450974505_4205390366_223132457.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_2393322171_3280631390.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_2101761967_223132457.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_2972329655_4270949176.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_495619700_3932576851.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_3170934580_4248145934.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_2948483314_3863194983.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_2628577088_3665068343.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_2532158480_1237683894.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/CardinalidadNYQ/1080p60/partial_movie_files/cardinaldef/34786186_329969645_2058704977.mp4'

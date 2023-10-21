@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/presentation-template-main/Cardinalidad/media/videos/ParadojasZenon/1080p30/partial_movie_files/Dicotomia/2026767530_3925280958_223132457.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/presentation-template-main/Cardinalidad/media/videos/ParadojasZenon/1080p30/partial_movie_files/Dicotomia/3601644271_1306187911_3183979753.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/presentation-template-main/Cardinalidad/media/videos/ParadojasZenon/1080p30/partial_movie_files/Dicotomia/3601644271_1086530131_685334295.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/presentation-template-main/Cardinalidad/media/videos/ParadojasZenon/1080p30/partial_movie_files/Dicotomia/3601644271_892922996_1245738821.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/presentation-template-main/Cardinalidad/media/videos/ParadojasZenon/1080p30/partial_movie_files/Dicotomia/3601644271_2289774904_2801691747.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/presentation-template-main/Cardinalidad/media/videos/ParadojasZenon/1080p30/partial_movie_files/Dicotomia/3601644271_1196612570_4014711482.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/presentation-template-main/Cardinalidad/media/videos/ParadojasZenon/1080p30/partial_movie_files/Dicotomia/3601644271_329969645_211986087.mp4'

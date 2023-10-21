@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/RealInfinity/Cardinalidad/media/videos/intro/1080p30/partial_movie_files/Intro/2026767530_3124472736_3522953975.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/RealInfinity/Cardinalidad/media/videos/intro/1080p30/partial_movie_files/Intro/3601644271_81665638_2613316408.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/RealInfinity/Cardinalidad/media/videos/intro/1080p30/partial_movie_files/Intro/3601644271_329969645_2556269405.mp4'

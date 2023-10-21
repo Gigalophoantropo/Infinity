@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/3814802930_3666864369_223132457.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_482083494_357715181.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_401586853_591487870.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_742626977_479445653.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_1144102536_3435921283.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_2776149922_1787841857.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_53262617_3657075730.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_3206241932_3510801972.mp4'
+file 'file:C:/Users/Usuario/Desktop/Divulgación/Proyectos/Infinito/Cardinalidad/media/videos/PotentialActualInfinity/720p30/partial_movie_files/PotActInfinity/371792034_329969645_455360135.mp4'
