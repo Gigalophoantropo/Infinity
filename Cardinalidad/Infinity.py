@@ -500,10 +500,98 @@ class Derivative(Scene):
 
         func1 = lambda x: (x**5)/3 - 8*(x**3)/3 + 4*x
 
-        plot = axis.plot(func1, x_range=[-7, 7], color = TEAL_D)
+        tracker = ValueTracker(.69)
+
+        plotfunc1 = axis.plot(func1, x_range=[-7, 7], color = TEAL_D)
         func1_prime=lambda x: (5*x**4)/3 - 8*x**2 + 4
-        ascline = axis.plot(func1, x_range=[-7, -(2*((6+21**(1/2))/5))**(1/2)], color=PURE_RED).set_z_index(1)
-        """self.play(Create(axis), run_time=2)
-        self.play(Create(plot), run_time=2)"""
-        self.add(ascline, plot)
-        #self.wait()
+        ascline1 = axis.plot(func1, x_range=[-7, -(2*((6+21**(1/2))/5))**(1/2)], color=PURE_RED).set_z_index(1)
+        ascline2 = axis.plot(func1, x_range=[-(2*((6+21**(1/2))/5))**(1/2), -(2*((6-21**(1/2))/5))**(1/2)], color=YELLOW).set_z_index(1)
+        ascline3 = axis.plot(func1, x_range=[-(2*((6-21**(1/2))/5))**(1/2), (2*((6-21**(1/2))/5))**(1/2)], color=PURE_GREEN).set_z_index(1)
+        ascline4 = axis.plot(func1, x_range=[(2*((6-21**(1/2))/5))**(1/2), (2*((6+21**(1/2))/5))**(1/2)], color="#00FFFF").set_z_index(1)
+        ascline5 = axis.plot(func1, x_range=[(2*((6+21**(1/2))/5))**(1/2), 7], color=PURE_BLUE).set_z_index(1)
+
+        ASCLine=VGroup(ascline1, ascline2, ascline3, ascline4, ascline5)
+
+        func1_prime_roots_tick = VGroup(
+            *[Line(.2*DOWN, .2*UP, stroke_width=2).move_to(axis.c2p(ASCLine[x].t_max, 0)) for x in range(4)]
+        )
+        func1_prime_roots_dot = VGroup(
+            *[Dot(axis.c2p(ASCLine[x].t_max, func1(ASCLine[x].t_max)), color=LIGHT_BROWN, radius=0.04) for x in range(4)]
+        ).set_z_index(2)
+
+        plotfunc1_labels=axis.get_axis_labels("x", "f(x)")
+
+
+        self.play(Create(axis), Write(plotfunc1_labels), run_time=3)
+        self.play(Create(plotfunc1), run_time=3)
+        for i in range(4):
+            self.play(Create(ASCLine[i]), run_time=3)
+            self.play(Create(func1_prime_roots_tick[i]), Create(func1_prime_roots_dot[i]), run_time=3)
+        self.play(Create(ASCLine[4]), run_time=3)
+
+        self.play(*[FadeOut(e) for e in self.mobjects], run_time=4)
+        self.play(Create(axis), run_time=2)
+        m1=axis.plot(lambda x: 2*x, x_range=[-7, 7], color="#FF00FF")
+        m2=axis.plot(lambda x: x/3, x_range=[-7, 7], color="#FFFF00")
+        m3=axis.plot(lambda x: -3*x, x_range=[-7, 7], color="#00FFFF")
+        m1_label=MathTex(r"2", color=m1.get_color()).move_to(3*UR)
+        m2_label=MathTex(r"\frac{1}{3}", color=m2.get_color()).move_to(m2.get_right()+UL)
+        m3_label=MathTex(r"-3", color=m3.get_color()).move_to(3*DR)
+        ms=VGroup(m1, m2, m3)
+
+        m_updater = always_redraw(
+            lambda: axis.plot(lambda x: tracker.get_value()*x, x_range=[-7, 7], color=ORANGE)
+        )
+
+        m_updater_label_name = MathTex(r"m=").set_color(ORANGE).to_corner(UR).shift(LEFT).set_z_index(1)
+
+        m_updater_label_value = always_redraw(
+            lambda: DecimalNumber().set_value(tracker.get_value()).next_to(m_updater_label_name).set_color(ORANGE).set_z_index(1)
+        )
+
+        m_updater_label = VGroup(m_updater_label_name, m_updater_label_value)
+
+        m_def_x_0=1.5
+        m_def_x_1=3
+        m_def_x=[m_def_x_0, m_def_x_1]
+
+        
+        self.play(Create(m1), run_time=1.5)
+        self.play(Create(m2), run_time=1.5)
+        self.play(Create(m3), run_time=1.5)
+        self.play(Write(m1_label), Write(m2_label), Write(m3_label), run_time=3)
+        self.play(FadeOut(m1_label, m2_label, m3_label), ReplacementTransform(ms, m_updater), run_time=3)
+        self.play(Write(m_updater_label), run_time=2)
+        for w in [4.5, -6.8, -40, 2.55, .53, .92, -.4, 69, -168.3, .01]:
+            self.play(tracker.animate.set_value(w), run_time=3)
+            self.wait()
+        self.play(Unwrite(m_updater_label), run_time=1.5)
+        self.play(tracker.animate.set_value(.69), run_time=3)
+        mdef_ticks=VGroup(
+            *[Line(.2*DOWN, .2*UP, stroke_width=2).move_to(axis.c2p(x, 0)) for x in m_def_x],
+            *[Line(.2*LEFT, .2*RIGHT, stroke_width=2).move_to(axis.c2p(0, m_updater.get_point_from_function(x)[1])) for x in m_def_x],
+        )
+        mdef_ticks_labels=VGroup(
+            *[MathTex(r"x_{}".format(x)).move_to(mdef_ticks[x].get_bottom()+DOWN/2) for x in [0, 1]],
+            *[MathTex(r"f(x_{})".format(x)).move_to(mdef_ticks[x+2].get_left()+LEFT) for x in [0, 1]],
+        )
+        mdef_ticks_lines=VGroup(
+            *[Line(axis.c2p(m_def_x[x], 0), axis.c2p(m_def_x[x], m_updater.get_point_from_function(m_def_x[x])[1]), stroke_width=2) for x in range(2)],
+            *[Line(axis.c2p(m_def_x[x], m_updater.get_point_from_function(m_def_x[x])[1]), axis.c2p(0, m_updater.get_point_from_function(m_def_x[x])[1]), stroke_width=2) for x in range(2)],
+        )
+
+        m_def = MathTex(r"m=\frac{f(x_1)-f(x_0)}{x_1-x_0}=\frac{\Delta f(x)}{\Delta x}").move_to(3.5*RIGHT + 2.5*DOWN)
+
+        self.play(Create(mdef_ticks[:2]), run_time=1.5)
+        self.play(Write(mdef_ticks_labels[:2]), run_time=3)
+        self.play(Create(mdef_ticks_lines[:2]), run_time=3)
+        self.play(Create(mdef_ticks[2:]), run_time=1.5)
+        self.play(Create(mdef_ticks_lines[2:]), run_time=3)
+        self.play(Write(mdef_ticks_labels[2:]), run_time=3)
+        self.play(Write(m_def), run_time=5)
+        self.wait()
+
+
+
+
+        self.wait()
